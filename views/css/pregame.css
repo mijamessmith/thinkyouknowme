@@ -1,0 +1,37 @@
+.pregame-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pregame-title {
+
+}
+
+.jumbotron {
+    background-color: #508AA8;
+    color: white;
+}
+
+.pregame-form {
+    width: 100%;
+    border-top: 8px solid #8B95C9;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.form-question {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.row {
+    width: 100% !important;
+}
+
+.btn {
+    width: 130px !important
+}

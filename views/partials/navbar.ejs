@@ -1,0 +1,135 @@
+<style>
+  #entireNav {
+  background: #8B95C9;
+  height: 100px
+  margin: 0px;
+  padding: 40px
+  border: 0px
+  min-height: 60px
+  font-size: 18px;
+  line-height: 60px
+  display: flex;
+  font-family: font-family: 'Kufam', cursive;
+  color: black;
+  }
+
+  .container-fluid {
+  height: 100px;
+  }
+
+  .right-navigation{
+  padding-right: 20px;
+  padding-top: 24px;
+  }
+
+  #landing.navbar-brand {
+  font-size: 30px;
+  margin-left: 5px
+  letter-spacing: 2px;
+  margin-top: 20px;
+  }
+
+  #siteIcon {
+  width: 65px;
+  height: auto;
+  float: left;
+  padding: 5px;
+  }
+
+  #titleSlogan {
+  letter-spacing: 1.5px;
+  color: black;
+  font-weight: 600;
+  height: 100%;
+  }
+
+  #titleSlogan:hover {
+  color: white;
+  }
+
+
+  .navLinks{
+  font-size: 18px;
+  display: flex;
+  color: black;
+  }
+
+  .navbar-nav li a:hover{
+  color: white !important;
+  }
+
+  .navbar-header {
+  height: 100%;
+  }
+
+  .navbar-nav li a {
+  color: black !important;
+  font-size: 22px !important;
+  }
+</style>
+
+<nav id="entireNav" class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img id="siteIcon" src="../../images/bw_home_icon.png"></img>
+      <a class="navbar-brand" href="#" id="landing">
+        <span id="titleSlogan">Think You Know Me?</span></a>
+    </div>
+    <div class="right-navigation">
+    <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navLinks">
+          <a class="navLinks" href="/home">Profile</a>
+        </li>
+        <li class="navLinks"><a class="navLinks" href="" id="logoutBtn">Logout</a></li>
+      </ul>
+  </div>
+  </div>
+</nav>
+
+<script>
+  const landing = document.getElementById("landing");
+  const logout = document.getElementById("logoutBtn");
+  
+  landing.addEventListener("click", function (event) {
+    event.preventDefault()
+    console.log("Landing Btn has been clicked")
+ 
+    let ajaxReq; 
+    ajaxReq = $.ajax({
+    url: '/', 
+  type: 'GET',
+  datatype: "json",
+  data: "" //we're not sending
+  });
+
+  ajaxReq.done(function (data) {
+  
+  if (data !== undefined) {
+  window.location.replace(`http://localhost:3000/`); //sending a new addresss to load
+  }
+  });
+  });
+
+  logout.addEventListener("click", function (event) {
+  event.preventDefault()
+  console.log("Logout Btn has been clicked")
+
+  let ajaxReq; //sometimes declaring and initializing has issues
+  ajaxReq = $.ajax({
+  url: '/logout',
+  type: 'GET',
+  datatype: "json",
+  data: "" //we're not sending
+  });
+
+  ajaxReq.done(function (data) {
+  //change car color in front end with the data
+  if (data !== undefined) {
+  window.location.replace(`http://localhost:3000/logout`); 
+  }
+  });
+  });
+
+</script>

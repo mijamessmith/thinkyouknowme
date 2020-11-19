@@ -1,0 +1,162 @@
+#playGame-container {
+   width: 100%;
+}
+
+.playGame-container h1 {
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.guess-container {
+    max-height: 100%;
+    width: 100%;
+    border: 10px solid #508AA8;
+    background-color: #003049;
+}
+
+.reset-container {
+    display:flex;
+    flex-direction: column;
+}
+.square {
+    height: 180px;
+    display: grid;
+    width: 400px;
+    background-color: purple;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    border: 4px solid black;
+    padding-top: 20px;
+    letter-spacing: .08em;
+    cursor: pointer;
+}
+
+.square:hover{
+    background-color: orange;
+    border: 4px solid white;
+}
+.square-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.optionText {
+
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+#stripe {
+    background: white;
+    height: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#guess {
+    letter-spacing: .05em;
+}
+
+.correct {
+    color: yellow;
+}
+
+.incorrect {
+    color: brown;
+}
+
+.default {
+    color: black
+}
+
+#question{
+    color: white;
+    letter-spacing: .05em;
+    text-align: center;
+}
+
+#reset {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    height: 35px;
+    font-size: 25px;
+    background-color: #031927;
+    color: white;
+    border: 2px solid black;
+}
+
+#reset:hover {
+    background-color: orange;
+}
+
+#nextQ {
+    position: relative;
+    color: black;
+    background-color: #BA1200;
+    height: 90px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#nextQ:hover {
+    color: white;
+    background-color: darkorange;
+}
+
+.quiz-p {
+    font-size: 25px;
+}
+
+.panel-body {
+    display: flex;
+    background-color: #508AA8;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayCorrect {
+    display: flex;
+    background-color: #1dd409;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayIncorrect {
+    display: flex;
+    background-color: #faa200;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#questionNumber {
+    font-weight: 600;
+    color: red;
+}
+
+#targetUserName {
+    margin-left: 5px;
+    font-weight: 600;
+    letter-spacing: .08em;
+}

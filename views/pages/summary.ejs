@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="../css/summary.css" ></link>
+
+<script>
+  var title = <%- JSON.stringify(locals.title) %>
+    var message = <%- JSON.stringify(locals.message) %>
+</script>
+<div class="summary-container">
+  <h1>Results of your Round</h1>
+  
+  <h2>
+    You scored <span id="finalScore"><%- parseInt(message) %></span> out of 10 correct
+  </h2>
+
+  <a class="goHomeBtn" onclick="location.href='/home'" type="button" id="goHome" role="button">Click to Go Home</a>
+</div>

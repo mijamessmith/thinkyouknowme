@@ -1,0 +1,56 @@
+.about-container {
+    margin-top: 50px;
+    width: 100%;
+    border: 20px solid #508AA8;
+    padding: 20px;
+}
+
+.container {
+    min-height: 780px;
+}
+
+.about{
+    width: 80%;
+}
+
+.about-icons {
+    margin-top: 10px;
+}
+
+.about-img-container {
+
+}
+
+.about-img {
+    max-height: 400px;
+    max-width: 100%;
+}
+
+.about-text {
+    letter-spacing: .01px;
+    line-height: 30px;
+}
+
+.social li {
+    list-style: none;
+    display: inline;
+    padding-left: 0;
+    margin-right: 5px;
+}
+
+.social {
+    padding-left: 0 !important;
+}
+
+h1 {
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.col-md-7 {
+    border-right: 1px solid rgba(222, 222, 222, 0.66) !important;
+}
+
+#img-col {
+    height: 100%;
+}

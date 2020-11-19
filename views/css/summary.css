@@ -1,0 +1,41 @@
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    background-color: #508AA8;
+    margin-bottom: 320px;
+    margin-top: 50px;
+}
+
+.summary-container h1 {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: .1em;
+    border-bottom: 8px solid #BA1200;
+}
+
+.summary-container h2 {
+    margin-top: 50px;
+    color: white;
+    font-size: 35px;
+    letter-spacing: .08em;
+}
+
+.goHomeBtn{
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: white;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.goHomeBtn:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}

@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="../css/home.css"/>
+  <script>
+    var title = <%- JSON.stringify(locals.title) %>
+    var message = <%- JSON.stringify(locals.message) %>;
+  </script>
+<div class="container.mt-4">
+  <div class="home-container">
+    <div class="home-start">
+      <h1 id="home-title">Welcome!</h1>
+      <div class="inner-form">
+        <label id="quiz-input-label">Enter the email of the person you want quiz against</label>
+        <input id="emailToSearch" type="text" name="email"/>
+        <h5>
+          <%- JSON.stringify(locals.message) %>
+        </h5>
+        <button id="readyPlay" type="button">PLAY</button>
+        <p class="messagePlay"></p>
+      </div>
+    </div>
+    <div class="home-stats">
+      <h3 class="home-stats-title">View my quiz records against other users</h3>
+      <a class="home-stats-link" href="/stats" id="stats">STATS</a>
+    </div>
+    <div class="invite-container">
+      <p>
+        Want to invite a friend or family member to the platform?<br/>
+        Enter their email and send a message below
+      </p>
+      <label for="invite-field"></label>
+      <input class="invite-field" name="invite-field"></input>
+      <button class="invite-btn" type="submit">SEND</button>
+      <p class="inviteMessage"></p>
+    </div>
+    </div>
+</div>
+<script src="./scripts/home-script.js"></script>
