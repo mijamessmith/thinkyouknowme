@@ -1,0 +1,116 @@
+#entireNav {
+    background: #8B95C9;
+    margin: 0px;
+    padding-top: 20px ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    border: 0px;
+    min-height: 60px;
+    font-size: 18px;
+    line-height: 60px;
+    font-family: 'Kufam', cursive;
+    color: black;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.container-fluid {
+    height: 100px;
+    width: 100%;
+}
+
+.right-navigation {
+    padding-right: 20px;
+    padding-top: 24px;
+}
+
+#landing.navbar-brand {
+    font-size: 30px;
+    margin-left: 5px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+#siteIcon {
+    width: 65px;
+    height: auto;
+    float: left;
+    padding: 5px;
+}
+
+#titleSlogan {
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 600;
+    height: 100%;
+}
+
+    #titleSlogan:hover {
+        color: white;
+    }
+
+
+.navLinks {
+    font-size: 18px;
+    display: flex;
+    color: black;
+}
+
+.navbar-nav li a:hover {
+    color: white !important;
+    background-color: #478978 !important;
+}
+
+.navbar-header {
+    height: 100%;
+}
+
+.navbar-nav li a {
+    color: black !important;
+    font-size: 22px !important;
+    background-color: white;
+}
+
+.navbar-nav li {
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.navbar-links {
+    position: relative;
+}
+
+.nav navbar-nav navbar-right {
+    position: relative;
+}
+
+/*@media only screen and (min-width: 600px) {
+    #entireNav {
+        display: flex;
+    }
+    
+    .navbar-nav ul {
+        position: relative;
+    }
+
+    .navbar-links {
+        background: #8B95C9
+    }
+
+    .navbar-header {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-links {
+        background: #8B95C9
+    }
+
+    .navLinks {
+        color: #8B95C9;
+        font-size: 22px !important;
+        background-color: #8B95C9;
+    }
+}
+*/

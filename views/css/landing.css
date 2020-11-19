@@ -13,9 +13,10 @@
 }
 
 .jumbotron {
-    margin-top: 100px;
+    margin-top: 200px;
     background-color: #508AA8;
     color: white;
+    position: relative;
 }
 
 #siteTitle {
